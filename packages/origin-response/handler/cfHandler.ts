@@ -80,6 +80,7 @@ export default async function cfHandler(
                     Key: fileKey,
                     Body: transformedImageBuffer,
                     ContentType: contentType,
+                    Tagging: 'thumbnail=1',
                 }),
             ),
         `Upload time (${fileKey})`,
